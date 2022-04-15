@@ -1,10 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# # Single level
-
-# In[1]:
-
 
 class parent:
     def summ(self):
@@ -19,9 +12,9 @@ c1.summ()
 c1.subs()
 
 
-# # Multilevel
+#Multilevel
 
-# In[4]:
+
 
 
 class gparent:
@@ -40,9 +33,9 @@ c2.show()
 c2.show1()
 
 
-# # Hierarchical
+#Hierarchical
 
-# In[5]:
+
 
 
 class parent:
@@ -63,10 +56,7 @@ c4.c2()
 c4.p1()
 
 
-# # Multiple 
-
-# In[6]:
-
+#Multiple 
 
 class Father:
     def f1(self):
@@ -85,7 +75,7 @@ c1.f2()
 c1.f1()
 
 
-# In[ ]:
+
 
 
 
