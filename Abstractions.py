@@ -1,16 +1,13 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
+#import ABC,abstractmethod from abc.
 
 
-from abc import ABC,abstractmethod     #we import ABC,abstractmethod from abc.
+from abc import ABC,abstractmethod     
+
+#abstraction means hiding the implementation part and showing the declaration part.
 
 
-# In[2]:
 
-
-class ss(ABC):                           #abstraction means hiding the implementation part and showing the declaration part.
+class ss(ABC):                           
     @abstractmethod
     def display(self):
         None
@@ -28,7 +25,6 @@ obj.display()
 obj.show()
 
 
-# In[ ]:
 
 
 
