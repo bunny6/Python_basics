@@ -1,7 +1,19 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[1]:
+
+a=int(input("Enter Value of a:"))
+b=int(input("Enter value of b:"))
+try:                                            #in try block we write the instructions in which we expect the exception.
+    c=a/b
+    print(c)
+except:                                         #in except block we handle the instructions which raise the exception.
+    print("Exception raised")
+else:
+    print("No exception")
+finally:
+    print("Program ends")
+
+
+
 
 
 a=int(input("Enter Value of a:"))
@@ -17,25 +29,7 @@ finally:
     print("Program ends")
 
 
-# In[2]:
-
-
-a=int(input("Enter Value of a:"))
-b=int(input("Enter value of b:"))
-try:
-    c=a/b
-    print(c)
-except:
-    print("Exception raised")
-else:
-    print("No exception")
-finally:
-    print("Program ends")
-
-
-# # Single exception
-
-# In[3]:
+#Single exception
 
 
 a=int(input("Enter value of A:"))
@@ -49,7 +43,6 @@ except Exception as e:
     
 
 
-# In[ ]:
 
 
 
