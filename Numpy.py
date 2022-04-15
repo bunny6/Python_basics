@@ -1,16 +1,11 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# # Array
 
-# In[1]:
+#Array
+
+
 
 
 import numpy as np    #importing the Numpy library. 'as' means Alternate name.
-
-
-# In[4]:
-
 
 a=np.array([1,2,3])      #creating a array.
 b=np.array(52)
@@ -18,19 +13,13 @@ print(a)                 #printing a array.
 print(b)
 
 
-# In[5]:
+
 
 
 type(a)                 #getting the data type.
 
 
-# In[12]:
-
-
 c=np.array([[1,2,3],[4,5,6]])     #2d array. Matrix format.
-
-
-# In[13]:
 
 
 c                      
@@ -48,7 +37,7 @@ d=np.array([[[1,2,3],[4,5,6]],[[7,8,6],[6,5,6]]])    #23 array. Matrix format.
 d
 
 
-# In[17]:
+
 
 
 print(a.ndim)                  #ndim is used to print the dimensions of array.
@@ -57,57 +46,44 @@ print(c.ndim)
 print(d.ndim)
 
 
-# # Conversion functions in numpy
-
-# In[20]:
+#Conversion functions in numpy
 
 
 A=np.array([10,20,30,40,50])   #declared an array
 
 
-# In[22]:
-
-
 print(A)                       #printed the array
 
-
-# In[25]:
 
 
 res=np.asarray(A,dtype="float",order="C")    #applied asarray on the array.
 
 
-# In[26]:
+
 
 
 print(res)                      #returned array as a float dtype.
 
 
-# In[28]:
 
 
 B=np.array([[1,2,3],[4,5,6]])
 
 
-# In[29]:
-
 
 B
 
-
-# In[30]:
 
 
 res1=np.asarray(B,dtype="int",order="F")    #applied asarray on the array.
 
 
-# In[33]:
+
 
 
 print(res1)
 
 
-# In[34]:
 
 
 # to print all the elements in a single dimension we use nditer.
@@ -116,13 +92,13 @@ for i in np.nditer(res1):
     print(i)
 
 
-# In[35]:
+
 
 
 res2=np.asarray(B,dtype="int",order="C")    #applied asarray on the array.
 
 
-# In[36]:
+
 
 
 # as we are row major, we will get the following result.
@@ -130,58 +106,48 @@ for i in np.nditer(res2):
     print(i)
 
 
-# In[37]:
+
 
 
 print(res2)
 
 
-# In[38]:
+
 
 
 s=b"hello welcome to python"   #b=bytes
 
 
-# In[39]:
+
 
 
 c=np.frombuffer(s,dtype="S1",count=-1,offset=0)  #frombuffer method.
 
 
-# In[40]:
-
-
 c
 
-
-# In[41]:
 
 
 c=np.frombuffer(s,dtype="S1",count=10,offset=0)
 
 
-# In[42]:
-
 
 c
 
 
-# In[43]:
+
 
 
 l=[10,20,30,40]
 
-
-# In[44]:
 
 
 d=np.fromiter(l,dtype="float",count=-1)   #fromiter method.
 print(d)
 
 
-# # arange,linspace,logspace.
+#arange,linspace,logspace.
 
-# In[45]:
 
 
 np.arange(0,10,2,dtype="int")  #arange.
@@ -855,25 +821,25 @@ np.max(zz)
 np.mean(zz)
 
 
-# In[92]:
+
 
 
 np.median(zz)
 
 
-# In[93]:
+
 
 
 np.std(zz)
 
 
-# In[95]:
+
 
 
 np.var(zz)
 
 
-# In[ ]:
+
 
 
 
