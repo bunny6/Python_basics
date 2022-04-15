@@ -1,9 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# # Public
-
-# In[9]:
 
 
 class Encap:                  #Public is an access spicifier. By these spicifiers only we can acheive encapsulation.
@@ -13,9 +8,9 @@ c1=Encap()
 c1.fan()
 
 
-# # Private
+#Private
 
-# In[11]:
+
 
 
 class ac:                        #private is an access specifier. The methods and functions can be used by this class only.
@@ -26,7 +21,6 @@ class ac:                        #private is an access specifier. The methods an
        
 
 
-# In[ ]:
 
 
 
