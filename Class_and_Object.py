@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[3]:
-
 
 class shop:
     time=10
@@ -22,7 +17,7 @@ print("Address is:",shub.address)
 shub.customer()
 
 
-# In[ ]:
+
 
 
 
