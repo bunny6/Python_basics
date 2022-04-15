@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
 
 def topten():
     yield 1
@@ -14,7 +9,7 @@ print(values.__next__())
 print(values.__next__())
 
 
-# In[4]:
+
 
 
 def topten():
@@ -30,7 +25,6 @@ for i in values:
     print(i)
 
 
-# In[ ]:
 
 
 
