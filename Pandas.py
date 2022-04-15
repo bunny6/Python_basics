@@ -1,130 +1,116 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[1]:
 
 
 import pandas as pd
 
 
-# In[2]:
+
 
 
 df=pd.read_csv("survey_results_public.csv")
 
 
-# In[3]:
+
 
 
 df.head()
 
 
-# In[4]:
+
 
 
 df.shape
 
 
-# In[5]:
+
 
 
 df.info()
 
 
-# In[6]:
+
 
 
 df.describe()
 
 
-# In[7]:
+
 
 
 df.isnull().sum()
 
 
-# In[8]:
 
 
 pd.set_option('display.max_columns',85)
 pd.set_option('display.max_rows',85)
 
 
-# In[9]:
+
 
 
 df.head()
 
 
-# In[10]:
 
 
 schema_df=pd.read_csv("survey_results_schema.csv")
 
 
-# In[11]:
-
 
 schema_df
 
 
-# In[12]:
+
 
 
 df.tail()
 
 
-# # Dataframe
+#Dataframe
 
-# In[13]:
 
 
 Info={"Name":["Shubham","Dileep","Sanad"],"Branch":["Computer","Entc","Mechanical"],"Email":["s@gmail.com","d@gmail.com","n@gmail.com"]}
 
 
-# In[14]:
 
 
 Info
 
 
-# In[15]:
+
 
 
 df1=pd.DataFrame(Info)
 
 
-# In[16]:
+
 
 
 df1
 
 
-# In[17]:
 
 
 df1['Email']
 
 
-# In[18]:
 
 
 df1[["Name","Email"]]
 
 
-# In[19]:
+
 
 
 type(df1['Email'])
 
 
-# In[20]:
 
 
 df1.columns
 
-
-# In[21]:
 
 
 df1.iloc[:,:] #simple way
