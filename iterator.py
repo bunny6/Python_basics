@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[4]:
 
 
 num=[3,4,5,6]
@@ -9,8 +5,6 @@ it=iter(num)
 print(it.__next__())
 print(it.__next__())
 
-
-# In[15]:
 
 
 class topten:
@@ -32,7 +26,7 @@ for i in values:
          
 
 
-# In[ ]:
+
 
 
 
