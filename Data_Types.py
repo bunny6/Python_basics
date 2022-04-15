@@ -1,127 +1,112 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# # Strings
-
-# In[7]:
+#strings.
 
 
-my_string='Hello world'
+my_string='Hello world'    #declaring a string
 
 
-# In[8]:
 
 
-my_string[0]
+
+my_string[0]            #fetch the string words.
 
 
-# In[9]:
+
 
 
 my='abcdefghij'
 
 
-# In[10]:
+
+ 
+my[2:]             #this will print:cdefghij
 
 
-my[2:]
 
 
-# In[11]:
+my[1:3]             #this will print:bc
 
 
-my[1:3]
 
 
-# In[13]:
+
+my[::-1]           #wil reverse the string.
 
 
-my[::-1]
 
 
-# In[14]:
+
+my_string.upper()   #will do upper case all the characters.
 
 
-my_string.upper()
 
 
-# In[15]:
+print("this is a {} {}".format('good','string'))    #.format technique.
 
 
-print("this is a {} {}".format('good','string'))
 
 
-# # List
 
-# In[16]:
 
 
 li=[1,2,3]
 
 
-# In[17]:
+
 
 
 li[0]='New value'
 
 
-# In[18]:
+
 
 
 li
 
 
-# In[19]:
 
 
 li[1:]
 
 
-# In[20]:
+
+li.append('Six')     #append is use to add something in list.
 
 
-li.append('Six')
 
-
-# In[21]:
 
 
 li
 
 
-# In[22]:
 
 
-li.pop(1)
+
+li.pop(1)     #pop will remove the last value from the list.
 
 
-# In[23]:
+
 
 
 li
 
 
-# # Dictionary
+#Dictionary
 
-# In[24]:
+
 
 
 d={'key1':'Value1','Key2':'value2'}
 
 
-# In[25]:
-
-
 d['key1']
 
 
-# In[26]:
 
 
 d['key3']='value3'
 
 
-# In[27]:
+
 
 
 d
@@ -139,89 +124,76 @@ d['key3']
 d1={'Shubham':45,'Dileep':55}
 
 
-# In[30]:
-
-
 d1.keys()
-
-
-# In[31]:
 
 
 d1.items()
 
 
-# In[32]:
-
 
 d1.values()
 
 
-# # Tuples
+#Tuples
 
-# In[33]:
+
 
 
 tu=(1,2,3)
 
 
-# In[34]:
+
 
 
 tu[0]
 
 
-# In[35]:
+
 
 
 tup=('this','is','tuple')
 
 
-# In[36]:
 
 
 li=['this','is','list']
 
 
-# In[37]:
+
 
 
 type(tup)
 
 
-# In[38]:
+
 
 
 type(li)
 
 
-# # Sets
-
-# In[39]:
+#Sets
 
 
 myset=set('aa')
 
 
-# In[40]:
 
 
 myset
 
 
-# In[41]:
 
 
 myset.add('a')
 
 
-# In[42]:
+
 
 
 myset
 
 
-# In[ ]:
+
 
 
 
