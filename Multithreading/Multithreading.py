@@ -1,14 +1,7 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
+#importing libraries
 
 from threading import *
 from time import sleep
-
-
-# In[6]:
 
 
 class Hello(Thread):
@@ -26,9 +19,6 @@ obj2=Hi()
 
 obj1.start()  #inside thread there is a method in run. Start will execute like obj1 with thread 1 and obj2 with thread 2
 obj2.start()
-
-
-# In[ ]:
 
 
 class Add(Thread):
