@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[5]:
 
 
 import re
@@ -20,7 +16,7 @@ isValid("anonymous123@...uk")
 isValid("...@domain.us")
 
 
-# In[ ]:
+
 
 
 
