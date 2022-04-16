@@ -1,9 +1,4 @@
-
-
 #Array
-
-
-
 
 import numpy as np    #importing the Numpy library. 'as' means Alternate name.
 
@@ -12,389 +7,155 @@ b=np.array(52)
 print(a)                 #printing a array.
 print(b)
 
-
-
-
-
 type(a)                 #getting the data type.
-
 
 c=np.array([[1,2,3],[4,5,6]])     #2d array. Matrix format.
 
-
 c                      
-
-
-# In[14]:
-
 
 d=np.array([[[1,2,3],[4,5,6]],[[7,8,6],[6,5,6]]])    #23 array. Matrix format.
 
-
-# In[15]:
-
-
 d
-
-
-
-
 
 print(a.ndim)                  #ndim is used to print the dimensions of array.
 print(b.ndim)
 print(c.ndim)
 print(d.ndim)
 
-
 #Conversion functions in numpy
-
-
 A=np.array([10,20,30,40,50])   #declared an array
-
 
 print(A)                       #printed the array
 
-
-
 res=np.asarray(A,dtype="float",order="C")    #applied asarray on the array.
-
-
-
-
 
 print(res)                      #returned array as a float dtype.
 
-
-
-
 B=np.array([[1,2,3],[4,5,6]])
-
-
 
 B
 
-
-
 res1=np.asarray(B,dtype="int",order="F")    #applied asarray on the array.
 
-
-
-
-
 print(res1)
-
-
-
 
 # to print all the elements in a single dimension we use nditer.
 # as we are column major, we will get the following result.
 for i in np.nditer(res1):
     print(i)
 
-
-
-
-
 res2=np.asarray(B,dtype="int",order="C")    #applied asarray on the array.
-
-
-
-
 
 # as we are row major, we will get the following result.
 for i in np.nditer(res2):
     print(i)
 
-
-
-
-
 print(res2)
-
-
-
-
 
 s=b"hello welcome to python"   #b=bytes
 
-
-
-
-
 c=np.frombuffer(s,dtype="S1",count=-1,offset=0)  #frombuffer method.
 
-
 c
-
-
 
 c=np.frombuffer(s,dtype="S1",count=10,offset=0)
 
-
-
 c
 
-
-
-
-
 l=[10,20,30,40]
-
-
 
 d=np.fromiter(l,dtype="float",count=-1)   #fromiter method.
 print(d)
 
-
 #arange,linspace,logspace.
-
-
-
 np.arange(0,10,2,dtype="int")  #arange.
-
-
-# In[46]:
-
 
 arr=np.arange(0,10,2,dtype="int")
 
-
-# In[48]:
-
-
 print(arr)
-
-
-# In[53]:
-
 
 arr=np.arange(0,10,dtype="float")
 
-
-# In[54]:
-
-
 arr
-
-
-# In[51]:
-
 
 arr1=np.linspace(0,10,5)     #linspace
 
-
-# In[52]:
-
-
 print(arr1)
-
-
-# In[56]:
-
 
 arr1=np.linspace(0,10,5,endpoint=False,retstep=True)    #retstep means it will return as tuple and with the difference.
 print(arr1)
 
-
-# In[57]:
-
-
 arr2=np.logspace(0,10,num=4,endpoint=False,base=2)  #Logspace
 print(arr2)
 
-
-# # Shape,reshape,zeros,ones,full,eye
-
-# In[58]:
-
-
+#Shape,reshape,zeros,ones,full,eye
 x=[[10,20,30],[40,50,60]]  #by using shape we get the dimension of an array
 np.shape(x)
 
-
-# In[59]:
-
-
 np.reshape(x,(3,2))  #by using reshape, we can change the shape of an array
-
-
-# In[60]:
-
 
 np.zeros((2,3)) # matrix of all the zeros
 
-
-# In[61]:
-
-
 np.ones((2,3)) #matrix of all the ones
-
-
-# In[62]:
-
 
 np.full((2,3),50)  #by using full, we will get a matrix of same element, which will be mentioned
 
-
-# In[63]:
-
-
 np.eye(3)  #diagonal elements will be one's and non diagonal elements wil be 0's.
 
-
-# # Accessing and slicing
-
-# In[64]:
-
+#Accessing and slicing
 
 p=np.array([10,20,30,40,50]) 
 
-
-# In[65]:
-
-
 print(p[0])  #accessing data by using index
-
-
-# In[66]:
-
 
 q=np.array([[10,20,30],[40,50,60]])  #2d array.
 
-
-# In[67]:
-
-
 q[0][1]             #accessing data from 2d array.
-
-
-# In[68]:
-
 
 q[0,1]
 
-
-# In[69]:
-
-
 q[1,2]
-
-
-# In[71]:
-
 
 r=np.array([[[10,20,30],[40,50,60]],[[70,80,90],[100,110,120]]])
 
-
-# In[72]:
-
-
 r[0,1,1]  #accessing the data from 3d array
-
-
-# In[73]:
-
 
 v=np.array([10,20,30,40,50,60])   #slicing
 
-
-# In[75]:
-
-
 print(v)
-
-
-# In[76]:
-
 
 v[::]                              #slicing in 1d array
 
-
-# In[77]:
-
-
 v[:4]
-
-
-# In[78]:
-
 
 v[2:]
 
-
-# In[79]:
-
-
 v[1:3]
-
-
-# In[81]:
-
 
 u=np.array([[10,20,30],[40,50,60]])
 
-
-# In[82]:
-
-
 print(u)
-
-
-# In[83]:
-
 
 u[0,0:2]                            #slicing in 2d array
 
-
-# In[84]:
-
-
 u[1,0:2]
-
-
-# In[86]:
-
 
 w=np.array([[[10,20,30],[40,50,60]],[[70,80,90],[100,110,120]]])
 
-
-# In[87]:
-
-
 w
-
-
-# In[88]:
-
 
 w[0,1,0:2]   #sliocing in 3d array
 
-
-# # Axis
-
-# In[96]:
-
+#Axis
 
 #Axis=0 means we have to apply operations on column.
 #Axis=1 means we have to apply operations on row.
 
 f=np.array([[10,2,33],[4,50,6]])
 
-
-# In[97]:
-
-
 print(f)
 
-
-# In[98]:
-
-
 np.sort(f,axis=0)    #here axis=0, hence operation has been done on columns.
-
-
-# In[99]:
-
 
 np.sort(f,axis=1)   #here axis=1, hence operation has been done on rows.
 
