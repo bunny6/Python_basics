@@ -1,4 +1,3 @@
-
 def topten():
     yield 1
     yield 2
@@ -7,10 +6,6 @@ def topten():
 values=topten()    
 print(values.__next__())
 print(values.__next__())
-
-
-
-
 
 def topten():
     n=1
