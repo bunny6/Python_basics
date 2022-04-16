@@ -1,5 +1,3 @@
-
-
 a=int(input("Enter Value of a:"))
 b=int(input("Enter value of b:"))
 try:                                            #in try block we write the instructions in which we expect the exception.
@@ -11,10 +9,6 @@ else:
     print("No exception")
 finally:
     print("Program ends")
-
-
-
-
 
 a=int(input("Enter Value of a:"))
 b=int(input("Enter value of b:"))
@@ -28,10 +22,7 @@ else:
 finally:
     print("Program ends")
 
-
 #Single exception
-
-
 a=int(input("Enter value of A:"))
 b=int(input("Enter value of B:"))
 
