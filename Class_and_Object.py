@@ -1,4 +1,3 @@
-
 class shop:
     time=10
     address="Gondia"
@@ -10,7 +9,6 @@ class shop:
         print("Welcome")
         print()
         
-
 shub=shop()
 print("Opening time:",shub.time)
 print("Address is:",shub.address)
