@@ -1,4 +1,3 @@
-
 class parent:
     def summ(self):
         print("Hello")
@@ -11,12 +10,7 @@ c1=child()
 c1.summ()
 c1.subs()
 
-
 #Multilevel
-
-
-
-
 class gparent:
     def display(self):
         print("Gp")
@@ -34,10 +28,6 @@ c2.show1()
 
 
 #Hierarchical
-
-
-
-
 class parent:
     def p1(self):
         print("Hello")
@@ -55,9 +45,7 @@ c3.p1()
 c4.c2()
 c4.p1()
 
-
 #Multiple 
-
 class Father:
     def f1(self):
         print("Father")
