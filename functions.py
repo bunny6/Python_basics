@@ -1,83 +1,45 @@
-
-
-
+#we define a function using a keyword def
 def fun(name):
     print('hello'+name)
 
 
 
-
-
 fun('good')
 
-
-
-
+#defining a addition function
 def add_fun(num1,num2):
     return num1+num2
 
-
-
-
 result=add_fun(1,2)
 
-
-
-
 result
-
-
-
 
 
 def say_hello(name):
     print("hello {}".format(name))
 
 
-
-
 say_hello('Huh')
-
-
 
 def shu(name="default"):
     return(name)
 
 
-
-
 re=shu()
-
-
-
-
 
 re
 
 
 #login functions
 
-
-
-
 2 % 2 == 0
 
 
 #mod returns the remainder
 
-
-
-
 2 % 3
 
-
-
-
 20 % 2 == 0
-
-
-
-
 
 def check_list(num_list):
     for i in num_list:
@@ -88,28 +50,13 @@ def check_list(num_list):
     return False    
 
 
-
-
-
 check_list([1,2,3])
-
-
-
-
 
 check_list([1,1,1])
 
-
-
-
-
 type(check_list)
 
-
 #Now instead of returning boolean value, we will return the actual value
-
-
-
 
 def check_list(new_list):
     
@@ -123,51 +70,25 @@ def check_list(new_list):
         
     return even_number    
 
-
-
-
 check_list([1,2,3])
-
-
-
-
 
 check_list([2,3,4])
 
 
 #Tuples
 
-
-
 s_p=[('App',200),('Sam',200),('Web',300)]
-
-
-
-
 
 for i in s_p:
     print(i)
 
-
-
 for i,j in s_p:
     print(i)
-
-
-
-
 
 for i,j in s_p:
     print(j)
 
-
-
-
 work_hours=[('App',200),('Sam',200),('Web',300)]
-
-
-
-
 
 def employee_check(work_hours):
 
@@ -182,21 +103,11 @@ for employee,hours in work_hours:
         pass
 return (employee_of_month,current_max)    
 
-
-
-
-
 li=['dileep','shubham']
-
-
 
 lis=[]
 for i in li:
     print(i[3])
-
-
-
-
 
 def employee_check(work_hours):
     
@@ -215,15 +126,7 @@ def employee_check(work_hours):
     # Notice the indentation here
     return (employee_of_month,current_max)
 
-
-
-
-
 employee_check(work_hours)
-
-
-
-
 
 def even(num):
     
@@ -236,12 +139,7 @@ def even(num):
             pass
     return even_num    
 
-
-
-
-
 even([1,2,3,4,5])
-
 
 
 def cube(num):
@@ -253,8 +151,6 @@ def cube(num):
             pass
         
     return cube
-
-
 
 
 cube([1,3,6,9,8])
