@@ -1,20 +1,16 @@
 #Array
-
 import numpy as np    #importing the Numpy library. 'as' means Alternate name.
 
 a=np.array([1,2,3])      #creating a array.
 b=np.array(52)
 print(a)                 #printing a array.
 print(b)
-
 type(a)                 #getting the data type.
 
 c=np.array([[1,2,3],[4,5,6]])     #2d array. Matrix format.
-
 c                      
 
 d=np.array([[[1,2,3],[4,5,6]],[[7,8,6],[6,5,6]]])    #23 array. Matrix format.
-
 d
 
 print(a.ndim)                  #ndim is used to print the dimensions of array.
@@ -159,443 +155,165 @@ np.sort(f,axis=0)    #here axis=0, hence operation has been done on columns.
 
 np.sort(f,axis=1)   #here axis=1, hence operation has been done on rows.
 
-
-# In[101]:
-
-
-
 Data=np.array([[1, 2, 3],[4, 5, 6]])
-
-
-# In[102]:
-
 
 np.sum(Data,axis=1)     #sum of the elements of the first and second row.
 
-
-# In[104]:
-
-
 a=np.array([1,2,3,4,5,6,7,8,9,10])
-
-
-# In[116]:
-
 
 a*10
 
-
-# In[117]:
-
-
 a[::-1]
 
-
-# In[119]:
-
-
 a[::-1]
-
-
-# In[120]:
-
 
 a/2
 
-
-# In[3]:
-
-
 V=np.array([10,20,30],dtype="U")
 
-
-# In[4]:
-
-
 V
-
-
-# In[30]:
-
 
 V=np.asarray(V,dtype="int")
 
-
-# In[31]:
-
-
 V
-
-
-# In[33]:
-
 
 O=np.array([1,2,3,4])
 P=np.array([5,6,7,8])
 T=O/P
 print(T)
 
-
-# # Copy and View
-
-# In[7]:
-
+#Copy and View
 
 q=np.array([10,20,30,40])
 
-
-# In[8]:
-
-
 q
-
-
-# In[9]:
-
 
 w=q.copy()                        #In copy, external copy is created.
 
-
-# In[10]:
-
-
 w
-
-
-# In[11]:
-
 
 e=np.array([10,20,30,40])
 
-
-# In[12]:
-
-
 r=e.view()                         #In view, a reference is being created.
 
-
-# In[13]:
-
-
 r
-
-
-# In[14]:
-
 
 r[1]=44
 
-
-# In[15]:
-
-
 r
 
-
-# # Concatenate
-
-# In[22]:
-
+#Concatenate
 
 C=np.arange(1,7).reshape(2,3)
 
-
-# In[23]:
-
-
 C
-
-
-# In[24]:
-
 
 X=np.arange(7,13).reshape(2,3)
 
-
-# In[25]:
-
-
 X
 
-
-# In[28]:
-
-
 np.concatenate((C,X))
-
-
-# In[29]:
-
 
 np.concatenate((C,X),axis=1)    #row wise concatenation
 
 
 # In[34]:
 
-
 C
-
-
-# In[35]:
-
 
 X
 
-
-# In[38]:
-
-
 np.stack((C,X))
-
-
-# In[39]:
-
 
 np.vstack((C,X))
 
-
-# In[40]:
-
-
 np.hstack((C,X))
 
-
-# # Split
-
-# In[44]:
-
+#Split
 
 G=np.arange(1,11)
 
-
-# In[45]:
-
-
 G
-
-
-# In[46]:
-
 
 np.split(G,2)
 
-
-# In[48]:
-
-
 np.array_split(G,3)
 
-
-# # Searching
-
-# In[49]:
-
+#Searching
 
 j=np.arange(10,100,10)
 
-
-# In[50]:
-
-
 j
-
-
-# In[53]:
-
 
 np.where(j==30)                   #where returns the index of searched value in array.
 
-
-# In[55]:
-
-
 np.where(j%30==0)
-
-
-# In[56]:
-
 
 k=np.arange(10,100,10)
 
-
-# In[57]:
-
-
-k
-
-
-# In[58]:
-
-
 np.searchsorted(k,25)  #searched sorted will return the possible index for the value.
 
-
-# # Sort
-
-# In[65]:
-
+#Sort
 
 n=np.array([[10,50,30],[50,80,60]])
 
-
-# In[66]:
-
-
 n
 
-
-# In[67]:
-
-
 np.sort(n)
-
-
-# In[68]:
-
 
 np.sort(n,axis=0)
 
 
-# # Arithimetic operations
-
-# In[69]:
-
+#Arithimetic operations
 
 m=np.array([1,2,3,4,5])
 n=np.array([1,2,3,4,5])
 z=np.add(m,n)
 
-
-# In[70]:
-
-
 z
-
-
-# In[72]:
-
 
 z=np.subtract(m,n)
 
-
-# In[73]:
-
-
 z
-
-
-# In[74]:
-
 
 z=np.multiply(m,n)
 
-
-# In[75]:
-
-
 z
-
-
-# In[76]:
-
 
 z=np.divide(m,n)
 
-
-# In[77]:
-
-
 z
-
-
-# In[78]:
-
 
 z=np.power(m,n)
 
-
-# In[79]:
-
-
 z
-
-
-# In[80]:
-
 
 z=np.mod(m,n)
 
-
-# In[81]:
-
-
 z
-
-
-# In[82]:
-
 
 zx=np.arange(1,11)
 
-
-# In[83]:
-
-
 zx
-
-
-# In[84]:
-
 
 zx*10
 
 
-# # Statistical functions
-
-# In[85]:
-
+#Statistical functions
 
 zz=np.arange(1,10).reshape(3,3)
 
-
-# In[86]:
-
-
 zz
-
-
-# In[87]:
-
 
 np.min(zz)
 
-
-# In[89]:
-
-
 np.max(zz)
-
-
-# In[90]:
-
 
 np.mean(zz)
 
-
-
-
-
 np.median(zz)
 
-
-
-
-
 np.std(zz)
-
-
-
-
 
 np.var(zz)
 
